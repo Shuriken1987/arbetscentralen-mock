@@ -17,7 +17,7 @@ code {
     width: 100% !important;
 }
 a{
-  color: #7cc241 !important;
+  color:#92E34D !important;
 }
  .logo {
      background-color: #30337d !important;
@@ -30,7 +30,7 @@ a{
     }
  .ja{
      background-color: #7cc241 !important;
-     color: #30337d !important;
+     color: #92E34D !important;
  }
  ul{
      margin: 0 auto;
@@ -45,7 +45,7 @@ a{
   left: 0;
   right: 0;
   height: 3px;
-  background-color: #7cc241 !important;
+  background-color: #92E34D !important;
   transform-origin: 0%;
 }
 .App{
@@ -61,7 +61,7 @@ a{
     border-radius: 0.375rem 0 0  0.375rem !important;
 }
 .form-control:focus {
-    color: #7cc241 !important;
+    color: #92E34D !important;
     box-shadow: none !important;
     border-color: transparent !important;
 }
