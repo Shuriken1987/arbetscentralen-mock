@@ -68,7 +68,7 @@ const Intro = () => {
             <div className="blocks-three-up">
                 <div className="blocks-three-up-inner">
 
-                    <a href="/news/2022/11/view-now-the-november-2022-cfp-certificant-connection-webinar"
+                    <a href="/"
                        className="blocks-three-up-item js-card-link">
                         <div className="blocks-three-up-item-inner">
 
@@ -94,7 +94,7 @@ const Intro = () => {
                     </a>
 
 
-                    <a href="/knowledge/psychology-of-financial-planning"
+                    <a href="/"
                        className="blocks-three-up-item js-card-link">
                         <div className="blocks-three-up-item-inner">
 
@@ -119,7 +119,7 @@ const Intro = () => {
 
                         </div>
                     </a>
-                    <a href="/for-employers/the-firms-forum/2022/12/the-three-time-zones-of-financial-planning"  className="blocks-three-up-item js-card-link">
+                    <a href="/"  className="blocks-three-up-item js-card-link">
                         <div className="blocks-three-up-item-inner">
 
                             <div className="blocks-three-up-item-eyebrow eyebrow">MASTER THE ART OF WORKFORCE MANAGEMENT</div>
