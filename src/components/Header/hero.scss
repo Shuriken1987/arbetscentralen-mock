@@ -1,0 +1,519 @@
+// Hero Home
+//
+// Markup: hero-home.twig
+//
+// Styleguide Heros.Hero Home
+@import 'breakpoint-slicer';
+@import "settings";
+@import "absolute";
+@import "rem";
+@import "icon";
+@import "font-weight";
+
+.hero-home {
+  position: relative;
+  z-index: 1;
+  padding: 0 25px;
+  overflow: hidden;
+
+  @include from(xxxl) {
+    padding: 0 50px;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    @include from(xl) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  &-bg {
+    @include absolute(0, 0, 0, 0);
+
+    @include from(xl) {
+      display: flex;
+    }
+
+    &-left {
+      @include from(xl) {
+        position: relative;
+        width: 20%;
+      }
+
+      @include from(xl) {
+        width: 25%;
+        max-width: 300px;
+      }
+
+      @include from(xxxl) {
+        width: 20%;
+        max-width: none;
+      }
+
+      &-slant {
+        display: none;
+
+        @include from(xl) {
+          display: block;
+          position: absolute;
+          left: 100%;
+          top: 0;
+          bottom: 0;
+          width: 15vw;
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -35%;
+            right: -100px;
+            bottom: -35%;
+            min-width: 500px;
+            width: 20vw;
+            background: primary-color(white);
+            transform: rotate(-30deg);
+
+            @include from(xl) {
+              right: -100px;
+            }
+
+            @include from(xxxl) {
+              width: 40vw;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      @include from(xl) {
+        flex: 1 1 auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        content: '';
+        @include absolute(0, 0, 0, 0);
+        background: rgba(#fff, .4);
+      }
+    }
+  }
+
+  &-left {
+    position: relative;
+    padding: 5px 0 50px;
+
+    @include from(s) {
+      padding-top: 15px;
+    }
+
+    @include from(xl) {
+      padding: 5vw 0;
+      width: 40%;
+    }
+
+    @include from(xxl) {
+      padding: 6vw 0;
+    }
+
+    @include from(xxl) {
+      min-height: 560px;
+    }
+
+    @include from(xxxl) {
+      padding: 125px 0 75px;
+      min-height: 600px;
+    }
+
+    @include from(xxxl) {
+      min-height: 620px;
+    }
+
+    &-content {
+      max-width: 500px;
+      margin: 0 auto;
+
+      @include from(xl) {
+        margin-left: 0;
+        max-width: 420px;
+      }
+
+      @include from(xxl) {
+        max-width: 450px;
+      }
+
+      @include from(xxxl) {
+        max-width: 500px;
+      }
+
+      @include from(xxxl) {
+        max-width: 600px;
+      }
+    }
+
+      //OVDE SAM STAO
+
+
+    &-title {
+      @include rem(font-size, 30px);
+      max-width: 300px;
+
+      @include from(s) {
+        @include rem(font-size, 36px);
+        max-width: 360px;
+      }
+
+      @include from(s) {
+        @include rem(font-size, 46px);
+        max-width: 420px;
+      }
+
+      @include from(xl) {
+        @include rem(font-size, 40px);
+        max-width: 380px;
+      }
+
+      @include from(xl) {
+        @include rem(font-size, 46px);
+        max-width: 420px;
+      }
+
+      @include from(xxxl) {
+        @include rem(font-size, 50px);
+        max-width: 460px;
+      }
+
+      @include from(xxxl) {
+        @include rem(font-size, 60px);
+        max-width: 550px;
+      }
+
+      @include from(xl) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-text {
+      margin-bottom: 30px;
+
+      @include from(xl) {
+        padding-right: 20px;
+        max-width: 326px;
+      }
+
+      @include from(xxl) {
+        padding-right: 0;
+        max-width: 400px;
+      }
+
+      @include from(xxxl) {
+        max-width: 460px;
+      }
+
+      @include from(xxxl) {
+        max-width: 520px;
+      }
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+
+    @include from(xxl) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 0 -20px -30px;
+    }
+
+    > a {
+      margin-bottom: 20px;
+
+      @include from(xxl) {
+        margin-bottom: 20px;
+        margin-left: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        @include from(xxl) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: flex-end;
+    order: -1;
+    position: relative;
+    padding: 5px 15px 0;
+    margin: 0 -25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 320px;
+
+    @include to(s) {
+      flex-direction: row-reverse;
+    }
+
+    @include from(m) {
+      display: block;
+      padding: 5px 25px 0;
+      min-height: 420px;
+    }
+
+    @include from(xl) {
+      display: flex;
+      align-items: stretch;
+      order: 1;
+      flex-direction: column;
+      padding: 40px 0 0 100px;
+      width: 60%;
+      margin: 0;
+      background-size: 0;
+    }
+
+    @include from(xxl) {
+      padding: 60px 0 0 150px;
+    }
+
+    @include from(xxxl) {
+      padding-top: 100px;
+    }
+
+    &::before {
+
+      @include to(l) {
+        content: '';
+        @include absolute(0, 0, 0, 0);
+        background: rgba(#fff, .4);
+      }
+    }
+
+    &::after {
+      @include to(l) {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -25px;
+        right: -25px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 110vw 45px 0;
+        border-color: transparent transparent primary-color(white);
+      }
+    }
+
+    &-quote {
+      position: absolute;
+      right: 0;
+      margin: 0 auto 45px;
+      max-width: 500px;
+
+      @include to(s) {
+        flex: none;
+        bottom: 0;
+        padding: 7px 14px 7px 7px;
+        @include rem(font-size, 12px);
+        z-index: 2;
+        //background: rgba(primary-color(yellow), .9);
+        white-space: nowrap;
+
+        &::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: -18px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 18px 29px 0;
+          //border-color: transparent rgba(primary-color(yellow), .9) transparent transparent;
+        }
+      }
+
+      @include from(m) {
+        width: 48%;
+        margin: 20px 0 75px auto;
+        padding: 0 50px 0 30px;
+      }
+
+      @include from(xl) {
+        margin: 0;
+        padding: 0 0 0 10px;
+        width: auto;
+        max-width: 270px;
+        align-self: flex-end;
+      }
+
+      @include from(xxxl) {
+        max-width: 290px;
+        padding: 0;
+      }
+
+      @include from(xxxl) {
+        max-width: 315px;
+      }
+
+      @include from(xxxl) {
+        max-width: 340px;
+      }
+
+      &-text {
+        display: none;
+
+        &.-quote {
+
+          @include from(m) {
+            display: block;
+            max-width: 300px;
+            @include rem(font-size, 15px);
+          }
+
+          @include from(m) {
+            @include rem(font-size, 16px);
+          }
+
+          @include from(l) {
+            @include rem(font-size, 18px);
+          }
+
+          @include from(xl) {
+            max-width: none;
+            @include rem(font-size, 16px);
+          }
+
+          @include from(xl) {
+            @include rem(font-size, 18px);
+          }
+
+          @include from(xxxl) {
+            @include rem(font-size, 20px);
+          }
+
+          @include from(xxxl) {
+            @include rem(font-size, 22px);
+          }
+
+          @include from(xxxl) {
+            @include rem(font-size, 24px);
+          }
+        }
+
+        @include icon(quotes) {
+          position: relative;
+          display: block;
+          margin-bottom: 4px;
+          color: primary-color(gray, shade3);
+          @include rem(font-size, 40px);
+
+          @include from(xl) {
+            @include rem(font-size, 50px);
+          }
+        }
+      }
+
+      &-citation {
+        display: flex;
+        position: relative;
+        @include font-weight(600);
+
+        @include from(m) {
+          font-size: 1rem !important; // sass-lint:disable-line no-important
+        }
+
+        &::before {
+          display: inline-block;
+          margin-right: 5px;
+          content: '— ';
+        }
+      }
+    }
+
+    &-headshot {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+
+      @include to(s) {
+        width: 90%;
+      }
+
+      @include from(m) {
+        left: -130px;
+        width: 65%;
+        max-width: 400px;
+      }
+
+      @include from(m) {
+        left: -140px;
+      }
+
+      @include from(xl) {
+        left: 0;
+        flex: 1 0 auto;
+        max-width: 70%;
+        transform: translateX(-51%);
+      }
+
+      @include from(xxxl) {
+        left: 0;
+      }
+
+      &-img {
+
+        @include from(xl) {
+          position: absolute;
+          bottom: -20px;
+          width: 125%;
+          max-width: 400px;
+          transform: translateX(-14%);
+        }
+
+        @include from(xl) {
+          width: 116%;
+          max-width: 430px;
+        }
+
+        @include from(xxl) {
+          bottom: -40px;
+          width: 460px;
+          max-width: none;
+        }
+
+        @include from(xxl) {
+          width: 500px;
+        }
+
+        @include from(xxxl) {
+          bottom: -65px;
+          width: 565px;
+        }
+
+        // @include from(xxxl) {
+        //   bottom: -70px;
+        //   max-width: 550px;
+        // }
+
+        @include from(xxxl) {
+          bottom: -125px;
+          width: 630px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+/*!*INTRO SECTION*!*/
+/*.intro {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    !*line-height: 1.25;*!*/
+/*}*/
+
+/*.blue {*/
+/*    background-color: #30337d;*/
+/*    transition: .25s ease-in-out;*/
+/*    position: relative;*/
+/*    padding: 45px 25px;*/
+/*    border: 0;*/
+/*    flex: 0 0 33%;*/
+/*}*/
+
+/*.blue:hover, .green:hover, .white:hover {*/
+/*    transform: scale(1.02);*/
+/*    z-index: 2;*/
+/*    outline: 0;*/
+/*}*/
+
+/*.green {*/
+/*    background-color: #7abf3f;*/
+/*    transition: .25s ease-in-out;*/
+/*    position: relative;*/
+/*    padding: 45px 25px 0 25px;*/
+/*    border: 0;*/
+/*    flex: 0 0 33%;*/
+/*}*/
+
+/*.white {*/
+/*    background-color: #FFFFFF;*/
+/*    transition: .25s ease-in-out;*/
+/*    position: relative;*/
+/*    padding: 45px 25px;*/
+/*    border: 0;*/
+/*    flex: 0 0 34%;*/
+/*}*/
+
+/*.blue-content {*/
+/*    width: 90%;*/
+/*    margin: 0 auto;*/
+/*    padding: 30px 0;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.green-content {*/
+/*    width: 90%;*/
+/*    margin: 0 auto;*/
+/*    padding: 30px 0;*/
+/*    color: #30337d;*/
+/*}*/
+
+/*.white-content {*/
+/*    width: 90%;*/
+/*    margin: 0 auto;*/
+/*    padding: 30px 0;*/
+/*    color: #30337d;*/
+/*}*/
+
+/*.intro h6 {*/
+/*    margin-bottom: 20px;*/
+/*    font-size: 14px;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*.intro h3 {*/
+/*    font-size: 32px;*/
+/*    font-weight: 900;*/
+/*    line-height: 1;*/
+/*    letter-spacing: -.14px;*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.intro p {*/
+/*    font-size: 1.1rem;*/
+/*    line-height: 1.425;*/
+/*    font-weight: 400;*/
+/*    margin: 0 0 20px;*/
+/*}*/
+
+
+.blocks-three-up {
+    background: #fff;
+    position: relative;
+    z-index: 2
+}
+
+.blocks-three-up-inner {
+    background: #333
+}
+
+@media (min-width:900px) {
+    .blocks-three-up-inner {
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media (min-width:1700px) {
+    .blocks-three-up-inner {
+        max-width: 1750px;
+        margin: 0 auto
+    }
+}
+
+.blocks-three-up-item {
+    position: relative;
+    display: block;
+    padding: 45px 25px;
+    border: 0;
+    transition: .25s ease-in-out;
+    cursor: pointer
+}
+
+@media (min-width:900px) {
+    .blocks-three-up-item {
+        display: -ms-flexbox;
+        display: flex;
+        width: 33.3333%
+    }
+}
+
+@media (min-width:1400px) {
+    .blocks-three-up-item {
+        padding: 45px 50px
+    }
+}
+
+.blocks-three-up-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .25s ease-in-out
+}
+
+.blocks-three-up-item:first-child:before {
+    background: #30337d;
+}
+
+@media (min-width:1400px) {
+    .blocks-three-up-item:first-child:before {
+        left: -200px
+    }
+}
+
+.blocks-three-up-item:first-child .eyebrow:before {
+    background: #000
+}
+
+.blocks-three-up-item:nth-child(2):before {
+    background: #7abf3f;
+}
+
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-cta,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-date,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-eyebrow,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-text,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-title {
+    color: #fff
+}
+/*OVAJ BLOK SAM JA DODAO*/
+.blocks-three-up-item:nth-child(1) .blocks-three-up-item-cta,
+.blocks-three-up-item:nth-child(1) .blocks-three-up-item-date,
+.blocks-three-up-item:nth-child(1) .blocks-three-up-item-eyebrow,
+.blocks-three-up-item:nth-child(1) .blocks-three-up-item-text,
+.blocks-three-up-item:nth-child(1) .blocks-three-up-item-title {
+    color: #fff
+}
+
+
+
+
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-cta span,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-date span,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-eyebrow span,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-text span,
+.blocks-three-up-item:nth-child(2) .blocks-three-up-item-title span {
+    text-shadow: -1px 1px rgba(78, 78, 78, .9)
+}
+
+.blocks-three-up-item:nth-child(3) {
+    color: #fff
+}
+
+.blocks-three-up-item:nth-child(3):before {
+    background: #FFFFFF;
+}
+
+@media (min-width:1400px) {
+    .blocks-three-up-item:nth-child(3):before {
+        right: -200px
+    }
+}
+
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-cta,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-date,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-eyebrow,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-text,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-title {
+    color: #30337d;
+}
+
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-cta span,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-date span,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-eyebrow span,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-text span,
+.blocks-three-up-item:nth-child(3) .blocks-three-up-item-title span {
+    text-shadow: -1px 1px rgba(78, 78, 78, .9)
+}
+
+.blocks-three-up-item-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 450px;
+    margin: 0 auto;
+    height: 100%
+}
+
+@media (min-width:900px) {
+    .blocks-three-up-item-inner {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+@media (min-width:900px) {
+    .blocks-three-up-item-text {
+        -ms-flex-positive: 2;
+        flex-grow: 2;
+        max-width: 370px
+    }
+}
+
+@media (min-width:900px) {
+    .blocks-three-up-item-title {
+        max-width: 420px
+    }
+}
+
+@media (min-width:1200px) {
+    .blocks-three-up-item-title {
+        margin-bottom: 30px
+    }
+}
+
+.blocks-three-up-item.-hovered,
+.blocks-three-up-item.-hovered:before,
+.blocks-three-up-item:active,
+.blocks-three-up-item:active:before,
+.blocks-three-up-item:focus,
+.blocks-three-up-item:focus:before,
+.blocks-three-up-item:hover,
+.blocks-three-up-item:hover:before {
+    transform: scale(1.02);
+    z-index: 2
+}
