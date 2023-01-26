@@ -11,7 +11,7 @@ const ContactUs = () => {
                     support and guidance you need to achieve your job search or talent acquisition goals. Contact us
                     today and let's work together for a successful outcome.
                 </p>
-                <a href="/" className="-caps -arrow-after contact-cta"><span>LET'S TALK</span></a> <FaArrowCircleRight/>
+                <a href="/" className="-caps -arrow-after contact-cta pt-1"><span>LET'S TALK</span></a> <FaArrowCircleRight/>
             </div>
         </>
     )
