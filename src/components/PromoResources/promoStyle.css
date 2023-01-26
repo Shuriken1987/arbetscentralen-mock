@@ -1,7 +1,11 @@
 .promo-double {
     padding-left: 25px;
     padding-right: 25px;
-    background-color: lightgray;
+    background-color: #ededed;
+}
+.promo-double .filled-button{
+    color: #30337d;
+    border: 1px solid #30337d;
 }
 
 @media (min-width:900px) {

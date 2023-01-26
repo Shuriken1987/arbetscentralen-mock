@@ -16,17 +16,18 @@ const PromoResources = () => {
                     <div className="promo-double-intro">
                         <h2 className="h2 -center promo-double-title text-center">ACHIEVE SUCCESS: DISCOVER OUR
                             RESOURCES</h2>
-                        <div className="-center -gray-dark wysiwyg-content">
+                        <div className="-center -gray-dark wysiwyg-content text-center">
                             <p>Whether you're a job seeker looking to take the next step in your career or an employer
                                 looking to build a strong, talented team, our resources are here to help. We offer a
                                 wealth of information and tools to help you navigate the job market and find the right
                                 opportunities.
                             </p>
+                            <a className="filled-button">EXPLORE ALL</a>
                         </div>
                     </div>
 
                     <div className="promo-double-container">
-                        <a className="promo-double-item -link " href="/career-and-growth/market-yourself">
+                        <a className="promo-double-item -link " href="/">
                             <div className="promo-double-item-image">
                                 <div className="promo-double-item-image-inner" style={bgStyle}>
                                     <span className="sr-text"></span>
@@ -46,7 +47,7 @@ const PromoResources = () => {
                             <span className="item-edit-frame"></span>
 
                         </a>
-                        <a className="promo-double-item -link " href="/career-and-growth/career-center">
+                        <a className="promo-double-item -link " href="/">
                             <div className="promo-double-item-image">
                                 <div className="promo-double-item-image-inner" style={bgStyle}>
                                     <span className="sr-text"></span>
