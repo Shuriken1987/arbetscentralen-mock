@@ -3,7 +3,7 @@
 
 .fun-facts {
   //margin-top: 140px;
-  background-image: url('../../images/backgrond_blur.jpg');
+  background-image: url('../../images/abstract-blur-and-working-space-at-home-photo.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,12 +31,12 @@
 
 .fun-facts span {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 1px;
   margin-bottom: 10px;
   display: block;
-}
+ text-shadow: 0 0 3px black, 0 0 5px black;}
 
 .fun-facts h2 {
   font-size: 36px;
@@ -52,6 +52,7 @@
 .fun-facts p {
   color: #FFFFFF;
   margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .fun-facts .left-content {

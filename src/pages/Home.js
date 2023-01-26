@@ -1,6 +1,7 @@
 import Hero from "../components/Header/Hero";
 import Intro from "../components/Intro/Intro";
 import WhyUs from "../components/WhyUs/WhyUs";
+import PromoResources from "../components/PromoResources/PromoResources";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
             <Hero/>
             <Intro/>
             <WhyUs/>
+            <PromoResources/>
         </>
     )
 }
