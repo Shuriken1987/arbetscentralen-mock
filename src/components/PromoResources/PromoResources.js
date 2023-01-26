@@ -1,13 +1,16 @@
 import "./promoStyle.css"
 // import img1 from "../../images/Matt_Aaron_CFP.png"
 import img2 from "../../images/unnamed.png"
-// import img3 from "../../images/services3.png"
+import img3 from "../../images/unnamed.png"
 
 
 const PromoResources = () => {
 
-    const bgStyle = {
+    const bgStyle2 = {
         backgroundImage: `url(${img2})`
+    }
+     const bgStyle1 = {
+        backgroundImage: `url(${img3})`
     }
     return (
         <>
@@ -29,7 +32,7 @@ const PromoResources = () => {
                     <div className="promo-double-container">
                         <a className="promo-double-item -link " href="/">
                             <div className="promo-double-item-image">
-                                <div className="promo-double-item-image-inner" style={bgStyle}>
+                                <div className="promo-double-item-image-inner" style={bgStyle1}>
                                     <span className="sr-text"></span>
                                 </div>
                             </div>
@@ -49,7 +52,7 @@ const PromoResources = () => {
                         </a>
                         <a className="promo-double-item -link " href="/">
                             <div className="promo-double-item-image">
-                                <div className="promo-double-item-image-inner" style={bgStyle}>
+                                <div className="promo-double-item-image-inner" style={bgStyle2}>
                                     <span className="sr-text"></span>
                                 </div>
                             </div>

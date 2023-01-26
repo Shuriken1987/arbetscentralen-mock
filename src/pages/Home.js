@@ -2,6 +2,7 @@ import Hero from "../components/Header/Hero";
 import Intro from "../components/Intro/Intro";
 import WhyUs from "../components/WhyUs/WhyUs";
 import PromoResources from "../components/PromoResources/PromoResources";
+import ContactAndSubscribe from "../components/ContactAndSubscribe/ContactAndSubscribe";
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Intro/>
             <WhyUs/>
             <PromoResources/>
+            <ContactAndSubscribe/>
         </>
     )
 }

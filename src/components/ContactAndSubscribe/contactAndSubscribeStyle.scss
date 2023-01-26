@@ -1,0 +1,62 @@
+.contact-left{
+    color: #30337d;
+}
+.contact-left .eyebrow{
+        color: #30337d;
+
+}
+.subscribe-right{
+    color: #7abf3f;
+}
+.subscribe-right .eyebrow{
+  color: #7abf3f;
+}
+  form {
+    display: flex;
+    width: 100%;
+
+    input {
+      letter-spacing: .1em;
+      //font-size: 1.6em;
+      padding: 5px;
+      flex: 1;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #7abf3f;
+      outline: none;
+      color: #7abf3f;
+
+      &::placeholder {
+        font-style: oblique;
+        color: #7abf3f;
+        font-weight: 700;
+      }
+    }
+
+    .subscribe-btn {
+      letter-spacing: .1em;
+      background-color: #7abf3f;
+      outline: none;
+      border: none;
+      border-radius: 10px  0 10px 0;
+      text-transform: uppercase;
+      //font-size: 1.3em;
+      font-weight: 700;
+      padding: 5px 10px;
+      transition: 0.5s ease-in;
+      color: #FFFFFF;
+
+      &:hover{
+        background-color: transparent;
+        border: 1px solid #7abf3f;
+        transition: 0.5s ease-in;
+        color: #7abf3f;
+      }
+    }
+  }
+  a.contact-cta>span{
+    background-image: linear-gradient(1turn, transparent, transparent 5px, #30337d 0, #30337d 8px, transparent 0);
+  }
+  .lead{
+    font-weight: 600 !important;
+  }
