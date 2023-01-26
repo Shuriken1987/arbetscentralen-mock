@@ -1,5 +1,6 @@
 import Hero from "../components/Header/Hero";
 import Intro from "../components/Intro/Intro";
+import WhyUs from "../components/WhyUs/WhyUs";
 
 const Home = () => {
 
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Hero/>
             <Intro/>
+            <WhyUs/>
         </>
     )
 }

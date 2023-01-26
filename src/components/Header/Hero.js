@@ -37,7 +37,7 @@ const Hero = () => {
                                     för ömsesidig tillväxt och framgång.</p>
                             </div>
                             <div className="hero-home-links">
-                                <a className="-caps -arrow-after hero-cta"><span>HIRED NOW</span>  <FaArrowCircleRight/></a>
+                                <a className="-caps -arrow-after hero-cta"><span>GET HIRED NOW</span>  <FaArrowCircleRight/></a>
                                 <a className="-caps -arrow-after hero-cta"><span>FIND THE RIGHT TALENT</span> <FaArrowCircleRight/></a>
                             </div>
                         </div>
