@@ -441,3 +441,76 @@ a {
 /*    border-color: transparent !important;*/
 /*}*/
 
+.eyebrow {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    /*font-size: 13px;*/
+    /*font-size: .8125rem;*/
+    line-height: 1.84615;
+    letter-spacing: -.33px
+}
+
+.eyebrow:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #30337d;
+    width: 20px;
+    height: 11px
+}
+
+@media (min-width:600px) {
+    .eyebrow-center {
+        text-align: center
+    }
+}
+
+.eyebrow.-center {
+    text-align: left;
+    padding-right: 40px;
+    padding-left: 40px
+}
+
+@media (min-width:600px) {
+    .eyebrow.-center:before {
+        top: 7px;
+        width: 27px;
+        height: 7px
+    }
+}
+
+@media (min-width:600px) {
+    .eyebrow.-center {
+        text-align: center
+    }
+
+    .eyebrow.-center:after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 0;
+        background-color: #30337d;
+        width: 27px;
+        height: 7px
+    }
+}
+
+.eyebrow.-center-short {
+    padding-right: 30px
+}
+
+.eyebrow.-center-short:after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    background-color: #30337d;
+    width: 20px;
+    height: 11px
+}

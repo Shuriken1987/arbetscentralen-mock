@@ -149,7 +149,13 @@
 }
 
 .blocks-three-up-item:first-child .eyebrow:before {
-    background: #000
+    background: #FFFFFF;
+}
+.blocks-three-up-item:nth-child(2) .eyebrow:before {
+    background: #FFFFFF;
+}
+.blocks-three-up-item:nth-child(3) .eyebrow:before {
+    background: #30337d;
 }
 
 .blocks-three-up-item:nth-child(2):before {

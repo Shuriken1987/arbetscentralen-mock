@@ -14,7 +14,6 @@ const Subscribe = () => {
                     <input type="text" placeholder="Enter your email"/>
                     <button className="subscribe-btn">STAY CONNECTED</button>
                 </form>
-
             </div>
         </>
     )
